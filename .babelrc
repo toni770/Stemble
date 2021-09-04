@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "src"
+      }
+    ],
+    "@babel/plugin-transform-classes"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "babel-plugin-root-import",
+        {
+          "rootPathSuffix": "src"
+        }
+      ]
+    }
+  }
+}
